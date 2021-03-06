@@ -9,7 +9,7 @@
     },
     "adminUsername": {
       "type": "string",
-      "defaultValue": "localAdmin",
+      "defaultValue": "AdminDC",
       "metadata": { "description": "Username to set for the local User. Cannot be \"Administrator\", \"root\" and possibly other such common account names. " }
     },
     "deploymentNumber": {
@@ -24,16 +24,16 @@
     },
     "adDomainName": {
       "type": "string",
-      "defaultValue": "contoso.com",
+      "defaultValue": "supdevinci.lan",
       "metadata": { "description": "Two-part internal AD name - short/NB name will be first part ('contoso')." }
     },
     "usersArray": {
       "type": "array",
       "defaultValue": [
         {
-          "FName": "Bob",
-          "LName": "Jones",
-          "SAM": "bjones"
+          "FName": "Jerome",
+          "LName": "Schmitt",
+          "SAM": "jschmitt"
         },
         {
           "FName": "Bill",
@@ -65,7 +65,7 @@
     },
     "vmSize": {
       "type": "string",
-      "defaultValue": "Standard_A2_v2",
+      "defaultValue": "Standard_A1_v2",
       "allowedValues": [ "Standard_A1_v2", "Standard_A2_v2", "Standard_A4_v2", "Standard_A2M_v2", "Standard_A4M_v2", "Standard_A4_v2", "Standard_D2_v2", "Standard_D3_v2", "Standard_D11_v2", "Standard_D12_v2", "Standard_B2ms", "Standard_B2s", "Standard_B4ms" ],
       "metadata": { "description": "Select a VM SKU (please ensure the SKU is available in your selected region)." }
     },
